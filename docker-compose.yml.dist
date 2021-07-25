@@ -1,0 +1,13 @@
+services:
+  lemp:
+    image: haiquang9994/lemp:[amd64/arm64]
+    ports:
+      - 80:80
+      - 3306:3306
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/html:/var/www/html
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ${WWW_DIR}:/www
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}

@@ -1,0 +1,4 @@
+www/*
+!www/info.php
+docker-compose.yml
+.env
