@@ -1,4 +1,7 @@
 www/*
 !www/info.php
+nginx/conf.d/*
+!nginx/conf.d/default.conf
+!nginx/conf.d/php.conf
 docker-compose.yml
 .env
