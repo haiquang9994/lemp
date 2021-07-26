@@ -3,5 +3,7 @@ www/*
 nginx/conf.d/*
 !nginx/conf.d/default.conf
 !nginx/conf.d/php.conf
+mysql/data
+redis/data
 docker-compose.yml
 .env
